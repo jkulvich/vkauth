@@ -86,17 +86,17 @@ SECRET - Standalone client secret key
 Client/Key from official VK clients:
 ```json
 {
-	IPhone: {
-		client: "3140623",
-		secret: "VeWdmVclDCtn6ihuP1nt"
+	"IPhone": {
+		"client": "3140623",
+		"secret": "VeWdmVclDCtn6ihuP1nt"
 	},
-	WPhone: {
-		client: "3697615",
-		secret: "AlVXZFMUqyrnABp8ncuU"
+	"WPhone": {
+		"client": "3697615",
+		"secret": "AlVXZFMUqyrnABp8ncuU"
 	},
-	Android: {
-		client: "2274003",
-		secret: "hHbZxrka2uZ6jB1inYsH"
+	"Android": {
+		"client": "2274003",
+		"secret": "hHbZxrka2uZ6jB1inYsH"
 	}
 }
 ```
