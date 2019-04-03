@@ -5,6 +5,7 @@ import "fmt"
 type Context struct {
 	Token           string
 	NeedCode        bool
+	PhoneMask       string
 	NeedCaptcha     bool
 	CaptchaUri      string
 	auth            *authParams
@@ -34,6 +35,7 @@ func (c *Context) Auth() error {
 	}
 	if resp.Error == "need_validation" {
 		c.NeedCode = true
+		c.PhoneMask = resp.PhoneMask
 		if !c.auth.TwoFaSupported {
 			return fmt.Errorf("2fa required to continue")
 		}
