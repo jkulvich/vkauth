@@ -36,7 +36,6 @@ func oauthRequest(values url.Values) (*authResp, error) {
 		return nil, err
 	}
 	data, err := ioutil.ReadAll(resp.Body)
-	fmt.Println(requri, string(data))
 	if err != nil {
 		return nil, err
 	}
